@@ -135,7 +135,7 @@
                 id="pdf-filename-input"
                 type="text" 
                 placeholder="Output Filename (e.g., character-sheet)"
-                value="Theron_The_Iron_Quill_Character_Sheet"
+                value="myPdf"
                 class="flex-grow sm:flex-grow-0 sm:w-64 p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out"
             >
 
@@ -562,94 +562,6 @@
         });
     </script>
 
-    <!-- Hidden element to hold the Markdown source for auto-filling the input -->
-    <template id="long-character-sheet-md">
-# Theron "The Iron Quill" Valerius
 
-**High Elf Lore Bard / Battle Master Fighter**
-Medium Humanoid (Elf), Neutral Good
-
-**Page 1: Core Stats & Features**
-
-**Armor Class** 18 (Plate Armor) **Hit Points** 78 (10d8 + 20) **Speed** 30 ft.
-
-| **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** | 
-| :---: | :---: | :---: | :---: | :---: | :---: | 
-| 14 (+2) | 12 (+1) | 14 (+2) | 10 (+0) | 11 (+0) | 18 (+4) | 
-
-**Saving Throws** Dex +4, Con +5, Cha +7 **Skills** Acrobatics +4, Deception +7, Insight +3, Perception +3, Performance +7 **Senses** Darkvision 60 ft., Passive Perception 13 **Languages** Common, Elvish, Draconic, Giant **Challenge** 7 (2,900 XP)
-
-**Bardic Inspiration (4/Short or Long Rest).** As a Bonus Action, Theron can expend one use of his Bardic Inspiration. A creature (other than himself) within 60 feet that can hear him gains a $1d8$ Inspiration die. For 10 minutes, the creature can add the die to one ability check, attack roll, or saving throw.
-
-**Combat Superiority (4/Short or Long Rest).** Theron has four superiority dice, which are $1d8$s. They are used to fuel his maneuvers.
-
-**Expertise.** His proficiency bonus is doubled for any check he makes using the following skills: Performance and Deception.
-
-**Fey Ancestry.** Theron has advantage on saving throws against being charmed, and magic can’t put him to sleep.
-
----PAGEBREAK---
-
-**Page 2: Actions, Maneuvers, and Proficiencies**
-
-**Actions**
-
-**Multiattack.** Theron makes two melee attacks.
-
-**Longsword.** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: $1d8 + 2$ slashing damage (or $1d10 + 2$ if wielded with two hands).
-
-**Hand Crossbow.** Ranged Weapon Attack: +4 to hit, range $30/120$ ft., one target. Hit: $1d6 + 1$ piercing damage.
-
-**Maneuvers (Uses 1 Superiority Die)**
-
-**Pushing Attack.** When Theron hits a creature with a weapon attack, he can expend one superiority die to attempt to drive the target back. He adds the die to the attack’s damage roll, and if the target is Large or smaller, it must make a DC 15 Strength saving throw or be pushed up to 15 feet away from him.
-
-**Parry.** When another creature damages Theron with a melee attack, he can use his Reaction and expend one superiority die to reduce the damage by the number rolled on the die + his Dexterity modifier (+1).
-
-**Menacing Attack.** When Theron hits a creature with a weapon attack, he can expend one superiority die to attempt to frighten the target. He adds the die to the attack’s damage roll, and the target must make a DC 15 Wisdom saving throw or be frightened of him until the end of its next turn.
-
-**Kit and Gear Manifest (JSON Structure for Testing)**
-
-```
-{
-  "inventory": [
-    {"item": "Longsword", "quantity": 1, "location": "Sheath"},
-    {"item": "Plate Armor", "quantity": 1, "location": "Worn"},
-    {"item": "Scholar's Pack", "quantity": 1, "location": "Backpack"},
-    {"item": "Holy Symbol (Lyre)", "quantity": 1, "location": "Necklace"},
-    {"item": "Potion of Healing", "quantity": 3, "location": "Pouch"},
-    {"item": "50 ft. Hemp Rope", "quantity": 1, "location": "Coil"},
-    {"item": "Dragon Scale Token (Red)", "quantity": 1, "location": "Pocket"}
-  ],
-  "wealth": {
-    "gold": 125,
-    "silver": 40,
-    "copper": 12
-  }
-}
-```
-
----PAGEBREAK---
-
-**Page 3: Spellcasting and Backstory**
-
-**Spellcasting (Bard)**
-
-Theron is a 6th-level spellcaster. His spellcasting ability is Charisma (Spell Save DC 15, +7 to hit with spell attacks). Theron has the following Bard spells prepared:
-
-| **Level** | **Slots** | **Spells Known** | 
-| :---: | :---: | :--- | 
-| Cantrips (at will) | - | Vicious Mockery, Minor Illusion, Prestidigitation | 
-| 1st | 4 | Cure Wounds, Dissonant Whispers, Faerie Fire, Healing Word | 
-| 2nd | 3 | Blindness/Deafness, Enthrall, Suggestion | 
-| 3rd | 3 | Dispel Magic, Hypnotic Pattern, Mass Healing Word | 
-
-**Additional Magical Secrets.** Theron knows two spells from any class thanks to his Lore Bard training: *Shield* (1st Level Abjuration) and *Fireball* (3rd Level Evocation).
-
-**Backstory: The Iron Quill**
-
-Theron Valerius was not raised in a traditional elven settlement but in the heavily structured, militaristic city-state of Valerius. Expected to follow his father into the ranks of the city guard, Theron instead found himself drawn to the meticulous study of battle tactics and the power of narrative. He excelled in the Fighter Academy, earning the title "The Iron Quill" for his sharp mind and discipline, but his true passion lay in the forbidden bards' college—a place where history was analyzed, not just recorded.
-
-After a political incident that threatened to expose his dual life, Theron fled the city, taking his plated armor and his lyre. He now uses his unique blend of martial prowess and persuasive magic to uncover conspiracies and right systemic wrongs, constantly writing down his adventures in a leather-bound journal. He seeks to balance the strict structure of his past with the chaotic beauty of genuine freedom.
-    </template>
 </body>
 </html>
